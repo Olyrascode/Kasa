@@ -1,0 +1,86 @@
+
+.logementinfos {
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 100px;
+margin-right: 100px;
+border: 2px solid red;
+
+
+.logementHostlocation {
+    display: flex;
+    justify-content: space-between;
+
+  
+   align-items: center;
+}
+    .titleLogement {
+        color: #FF6060;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%; /* 51.336px */
+}
+
+.location {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 25.668px */
+}
+
+.tagsDiv {
+    display: flex;
+    
+    align-items: center;
+    width: 100%;
+    
+    .tagsLogement {
+        display: flex;
+        flex-direction: row;
+        .tagsBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Montserrat;
+            color: white;
+            width: 115px;
+            height: 25px;
+            border-radius: 25px;
+            flex-shrink: 0;
+            background-color: #FF6060;
+            margin-left: 10px;
+        }}}
+        
+        .hostDiv {
+            p {
+                color: #FF6060;
+                text-align: right;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 142.6%; /* 25.668px */
+                
+            }
+            img {
+                width: 64px;
+                height: 64px;
+                flex-shrink: 0;
+                border-radius: 50%;
+                
+            }
+        }
+      .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .item_box {
+            width: 582px;
+        }
+      }
+    }
