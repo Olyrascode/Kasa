@@ -25,3 +25,61 @@ header {
     }
   }
 }
+
+// Media queries //
+@media screen and (max-width: 980px) {
+  header {
+    margin: 20px;
+    a {
+      width: auto;
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  header {
+    margin: 20px;
+    a {
+      width: auto;
+    }
+    img {
+      width: 145px;
+    }
+    .navBar {
+      .link {
+        display: flex;
+        gap: 26px;
+
+        a {
+          font-size: 15px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    max-width: 335px;
+    margin: 20px;
+    a {
+      width: auto;
+    }
+    img {
+      width: 145px;
+    }
+    .navBar {
+      width: 335px;
+
+      .link {
+        display: flex;
+        gap: 26px;
+
+        a {
+          font-size: 12px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

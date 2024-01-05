@@ -1,10 +1,10 @@
 
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
 import Dropdown from "../Dropdown";
 import Carousel from "../logementspage/Caroussel";
-import data from '../logements.json';
+
 import Title from '../logementspage/Title';
 import Localisation from "../logementspage/Localisation";
 import Tag from '../logementspage/Tag';
@@ -12,7 +12,7 @@ import Host from '../logementspage/Host';
 import Rating from '../logementspage/Rating';
 
 function Logements() {
-    const { id } = useParams(); // Utilisez useParams pour obtenir les paramètres d'URL
+    // const { id } = useParams(); // Utilisez useParams pour obtenir les paramètres d'URL
 
 
 

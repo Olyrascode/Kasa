@@ -22,3 +22,44 @@
     width: 200px;
   }
 }
+@media screen and (max-width: 980px) {
+  .thumbnail {
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    max-width: 48%;
+  }
+  .card {
+    width: auto;
+    img {
+      width: 100%;
+    }
+    .card_title {
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  a {
+    max-width: 100%;
+  }
+  // .card {
+  //   width: 100%;
+  //   img {
+  //     width: 100%;
+  //   }
+  // }
+}
+@media screen and (max-width: 375px) {
+  a {
+    max-width: 100%;
+  }
+  .card {
+    width: 335px;
+    img {
+      width: 335px;
+    }
+  }
+}
