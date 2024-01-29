@@ -38,15 +38,15 @@ const Boite = () => {
             <img className='arrow' src={Arrow} alt="fleche boite" />
           </div>
           </div>
-          {fiabiliteOpen && (
-              <div className='item_text'>
+       
+              <div className={`item_text ${fiabiliteOpen ? 'opened' : ''}`}>
               <p>Les annonces postées sur Kasa garantissent une fiabilité totale.
                 Les photos sont conformes aux logements, et toutes les informations
                 sont régulièrement vérifiées par nos équipes.
               </p>
               {/* Ajoutez ici le contenu spécifique à la Fiabilité */}
               </div>
-          )}
+          
         </div>
   
         <div className='item_box'>
@@ -60,15 +60,15 @@ const Boite = () => {
             <img className='arrow' src={Arrow} alt="fleche boite" />
           </div>
             </div>
-          {respectOpen && (
-            <div className='item_text'>
+            <div className={`item_text ${respectOpen ? 'opened' : ''}`}>
+           
               <p>La bienveillance fait partie des valeurs fondatrices de Kasa.
                 Tout comportement discriminatoire ou de perturbation du voisinage
                 entraînera une exclusion de notre plateforme.
               </p>
               {/* Ajoutez ici le contenu spécifique au Respect */}
             </div>
-          )}
+          
         </div>
   
         <div className='item_box'>
@@ -82,14 +82,13 @@ const Boite = () => {
             <img className='arrow' src={Arrow} alt="fleche boite" />
           </div>
             </div>
-          {serviceOpen && (
-            <div className='item_text'>
+            <div className={`item_text ${serviceOpen ? 'opened' : ''}`}>
               <p>La bienveillance fait partie des valeurs fondatrices de Kasa.
                 Tout comportement discriminatoire ou de perturbation du voisinage
                 entraînera une exclusion de notre plateforme.</p>
               {/* Ajoutez ici le contenu spécifique au Service */}
             </div>
-          )}
+       
         </div>
   
         <div className='item_box'>
@@ -103,8 +102,7 @@ const Boite = () => {
             <img className='arrow' src={Arrow} alt="fleche boite" />
           </div>
             </div>
-          {securiteOpen && (
-            <div className='item_text'>
+            <div className={`item_text ${securiteOpen? 'opened' : ''}`}>
               <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes 
                 que pour les voyageurs, chaque logement correspond aux critères
                 de sécurité établis par nos services. En laissant une note aussi bien à 
@@ -114,7 +112,7 @@ const Boite = () => {
               </p>
               {/* Ajoutez ici le contenu spécifique à la Sécurité */}
             </div>
-          )}
+          
         </div>
       </div>
     );

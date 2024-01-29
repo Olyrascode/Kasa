@@ -20,9 +20,9 @@
     margin: 20px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .thumbnail {
-    width: 335px;
+    // width: 335px;
     margin: -25px 20px 0px 20px;
     padding: 0;
     background-color: transparent;

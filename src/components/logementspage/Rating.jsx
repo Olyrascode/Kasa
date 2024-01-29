@@ -1,13 +1,13 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import data from '../logements.json';
-import '../styles/_Rating.scss'
 
+import { useParams } from 'react-router-dom';
+import PropTypes from 'prop-types'; // Importez PropTypes depuis 'prop-types'
+import data from '../logements.json';
+import '../styles/_Rating.scss';
 
 function Rating() {
     const { id } = useParams();
     const logement = data.find(item => item.id === id) || {};
-    const rating = logement.rating || 0; // Si le rating n'est pas défini, utilisez 0
+    const rating = logement.rating || 0;
 
     const generateStars = () => {
         const stars = [];
@@ -28,5 +28,10 @@ function Rating() {
 const Star = ({ fill }) => (
     <div className={`star ${fill}`} />
 );
+
+// Ajoutez une validation de type pour la propriété 'fill'
+Star.propTypes = {
+    fill: PropTypes.string.isRequired, // Vous pouvez ajuster le type en fonction de vos besoins
+};
 
 export default Rating;

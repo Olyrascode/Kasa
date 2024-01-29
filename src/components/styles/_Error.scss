@@ -11,7 +11,6 @@
     font-weight: 700;
     margin-top: 89px;
     margin-bottom: 139px;
-    border: 2px solid red;
   }
   .errorText {
     color: #ff6060;
@@ -31,5 +30,39 @@
     line-height: 142.6%; /* 25.668px */
     text-decoration-line: underline;
     margin: 139px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .error {
+    height: 100%;
+    p {
+      width: auto;
+    }
+    .errorNumber {
+      font-size: 150px;
+    }
+    .errorText {
+      font-size: 2rem;
+      margin-left: 50px;
+      margin-right: 50px;
+      text-align: center;
+    }
+    .returnHome {
+      text-align: center;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .error {
+    width: auto;
+    .errorNumber {
+      text-align: center;
+      font-size: 130px;
+    }
+    .returnHome {
+      text-align: center;
+    }
   }
 }

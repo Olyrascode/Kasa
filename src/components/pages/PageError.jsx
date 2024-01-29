@@ -8,8 +8,8 @@ function PageError() {
             <Header />
             <div className='error'>
                 <p className="errorNumber">404</p>
-                <p className="errorText"> Oups! La page que vous demandez n existe pas.</p>
-                <Link className='returnHome' to="/">Retourner sur la page d acceuil</Link>
+                <p className="errorText"> Oups! La page que vous demandez n&apos;existe pas.</p>
+                <Link className='returnHome' to="/">Retourner sur la page d&apos;acceuil</Link>
             </div>
             <Footer />
         </div>

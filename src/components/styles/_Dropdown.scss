@@ -32,10 +32,10 @@
     }
 
     .arrow_div {
-      width: 25px;
       height: 15px;
       margin-right: 20px;
-      transform: rotate(180deg);
+
+      transform-origin: center;
 
       .arrow {
         position: relative;
@@ -56,15 +56,17 @@
   }
 
   .item_text {
-    padding: 20px;
     background-color: #f6f6f6;
     color: #ff6060;
     overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-height: 0;
+    transition: max-height 1.5s ease-in;
   }
-
-  // .item_text_open {
-  //   max-height: auto;
-  // }
+  .item_text.opened {
+    max-height: 100vh; /* Utilisez une valeur appropriée (ici, 100vh) pour permettre l'expansion complète */
+  }
 }
 @media screen and (max-width: 980px) {
   .item {
