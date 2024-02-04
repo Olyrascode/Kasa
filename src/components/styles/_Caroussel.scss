@@ -10,7 +10,7 @@
 .carousel {
   display: flex;
   align-items: center;
-
+  justify-content: center;
   position: relative;
   width: 300px;
   overflow: hidden;
@@ -23,6 +23,16 @@
 .cover-image {
   width: 100%;
   height: max-content;
+  z-index: -1;
+}
+.imgNmb {
+  font-family: Montserrat;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 2px black;
 }
 
 .arrow {
@@ -72,6 +82,7 @@
     margin: 0px 20px 0px 20px;
     width: 335px;
     height: 255px;
+
     .cover-image {
       min-height: 255px;
       min-width: 355px;
@@ -84,5 +95,11 @@
       right: 0px;
       height: 24px;
     }
+  }
+}
+.imgNmb {
+  p {
+    display: flex;
+    justify-content: center;
   }
 }
