@@ -1,9 +1,17 @@
+body {
+  footer {
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
 .logementinfos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 100px;
   margin-right: 100px;
+  flex: 1;
 
   .logementHostlocation {
     display: flex;
@@ -99,7 +107,7 @@
 
     .item_box {
       width: 48%;
-      height: auto;
+
       ul {
         list-style: none;
         padding: 0;
@@ -171,7 +179,18 @@
     }
   }
 }
-
+@media screen and (max-width: 375px) {
+}
+.rightPanel {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 335px;
+  p {
+    margin-top: 10px;
+  }
+}
 @media screen and (max-width: 370px) {
   .logementinfos {
     margin: 0px 20px 0px 20px;
